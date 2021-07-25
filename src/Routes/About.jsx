@@ -96,7 +96,7 @@ const About = () => {
 						animateIn='bounceInRight'
 						animateOut='bounceoutLeft'
 						duration={2}
-						
+						offset={100}
 					>
 						<Span></Span>
 					</ScrollAnimation>
