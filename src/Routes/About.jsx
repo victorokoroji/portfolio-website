@@ -74,7 +74,7 @@ const StyledButton = styled(Button)`
 	text-decoration: none;
 	border: 2px solid black;
 	transition: all 1s ease;
-	&: hover {
+	&:hover {
 		color: black;
 		background-color: white;
 	}
