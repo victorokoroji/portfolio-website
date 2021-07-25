@@ -108,7 +108,7 @@ const About = () => {
 						duration={2}
 					>
 						<Title as='p' text>
-							I'm a multi-focused Frontend Developer who enjoys buiding elegant
+							I'm a multi-focused Frontend Developer who enjoys building elegant
 							and highly responsive web applications that looks great across all
 							devices. I am passionate about learning new technologies and
 							expanding my skill set to stay updated. In my spare time, i write

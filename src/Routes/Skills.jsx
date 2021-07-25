@@ -102,7 +102,7 @@ const Skills = () => {
 					>
 						<Text as='p'>
 							Ability to use JavaScript to add functionality to a website.
-							Ablity to write clean, readable, reusable and scalable javascript
+							Able to write clean, readable, reusable and scalable javascript
 							codes. Application of the principles of Data Structure and
 							Algorithm in writing codes.
 						</Text>
