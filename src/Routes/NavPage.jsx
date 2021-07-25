@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 	top: 60px;
 	right: -100%;
 	background-color: white;
-	transition: all 1.5s ease;
+	transition: all 1s ease-out;
 	z-index: 3;
 	${({ menuOpen }) =>
 		menuOpen &&

@@ -38,6 +38,9 @@ const Title = styled.a`
 	font-weight: 700;
 	text-decoration: none;
 	color: white;
+	&.active{
+		color: black;
+	}
 `;
 const Toggle = styled.button`
 	color: ${({ menuOpen }) => (menuOpen ? 'black' : 'white')};
@@ -65,7 +68,7 @@ const TopBar = () => {
 						<>
 							<Wrapper className={menuOpen && 'active'}>
 								<Container>
-									<Title href='#intro'> SIR VIC. PORTFOLIO </Title>
+									<Title href='#intro' className={menuOpen && 'active'}> SIR VIC. PORTFOLIO </Title>
 									{menuOpen ? (
 										<Toggle onClick={handleMenuOpen} menuOpen>
 											<FontAwesomeIcons icon={faTimes} size='1x' />
