@@ -7,7 +7,6 @@ import FontawesomeIcons from '../Components/FontAwesomeIcons';
 import {
 	faCommentAlt,
 	faPhoneAlt,
-	faEnvelope,
 	faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -140,11 +139,8 @@ const Contact = () => {
 						<ReachOut>
 							<Icon icon={faMapMarkerAlt} size='2x' />
 							<Text>Location</Text>
-							<Text>No 37 Church Street, Off Alafia Mushin, Lagos.</Text>
+							<Text>Mushin, Lagos, Nigeria.</Text>
 						</ReachOut>
-						<Icon icon={faEnvelope} size='2x' />
-						<Text>Email</Text>
-						<Text>okorojiebube2@gmail.com</Text>
 					</ContactAddress>
 					<Form
 						name='contact'

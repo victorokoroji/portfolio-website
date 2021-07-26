@@ -8,6 +8,7 @@ import DownloadOne from '../Assets/Images/DownloadOne.png';
 import downloadTwo from '../Assets/Images/downloadTwo.png';
 import downloadThree from '../Assets/Images/downloadThree.png';
 import git from '../Assets/Images/git.png';
+import resume from '../Assets/Images/blog2.png';
 const data = [
 	{
 		id: 1,
@@ -140,7 +141,7 @@ const Project = styled.div`
 const Link = styled.a`
 	margin-top: ${({ secondary }) => (secondary ? 'initial' : 6)}em;
 	padding: 0.5em 1em;
-	width:  ${({ secondary }) => (secondary ? 40 : 40)}%;
+	width: ${({ secondary }) => (secondary ? 40 : 40)}%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: black;
@@ -152,9 +153,9 @@ const Link = styled.a`
 	align-items: center;
 	text-decoration: none;
 	border: 2px solid black;
-	&:hover{
+	&:hover {
 		color: black;
-		background-color: white
+		background-color: white;
 	}
 `;
 const Image = styled.img`
@@ -163,6 +164,7 @@ const Image = styled.img`
 	height: 150px;
 	margin: 0 auto 0.5em auto;
 	display: flex;
+
 	justify-content: center;
 	align-items: center;
 	@media (min-width: 660px) {
@@ -195,7 +197,11 @@ const ProjectText = styled.h5`
 const Blogs = styled.div`
 	color: white;
 	position: relative;
-
+	@media (min-width: 660px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 `;
 const Blog = styled.div`
 	max-width: 300px;
@@ -208,6 +214,7 @@ const Blog = styled.div`
 `;
 const Text = styled.p`
 	font-size: 2em;
+	color: white;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 1em;
@@ -260,10 +267,8 @@ const MyWorks = () => {
 						Blogs
 					</StyledButton>
 				</Box>
-				<ProjectContainer id='project'>
-					<Title as='h4' primary>
-						Projects
-					</Title>
+				<Text id='project'>Projects</Text>
+				<ProjectContainer>
 					{data.map(d => (
 						<ScrollAnimation
 							animateIn='zoomIn'
@@ -294,8 +299,8 @@ const MyWorks = () => {
 						bgColor='white'
 					/>
 				</Footer>
+				<Text id='blog'>Blogs</Text>
 				<Blogs>
-					<Text id='blog'>Blogs</Text>
 					<Blog>
 						<ScrollAnimation
 							animateIn='backInUp'
@@ -308,6 +313,23 @@ const MyWorks = () => {
 						<Link
 							secondary
 							href='https://vickymarz.hashnode.dev/how-to-make-pull-request-guide-for-beginners'
+							target='_blank'
+						>
+							Read Now
+						</Link>
+					</Blog>
+					<Blog>
+						<ScrollAnimation
+							animateIn='backInUp'
+							animateOut='backOutDown'
+							duration={2}
+						>
+							<Image src={resume} />
+						</ScrollAnimation>
+
+						<Link
+							secondary
+							href='https://vickymarz.hashnode.dev/why-you-shouldnt-have-your-resume-in-your-portfolio'
 							target='_blank'
 						>
 							Read Now
