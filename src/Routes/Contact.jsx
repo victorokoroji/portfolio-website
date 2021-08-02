@@ -145,8 +145,7 @@ const Contact = () => {
 					<Form
 						name='contact'
 						method='POST'
-						netlify='true'
-						netlify-honeypot="bot-field" hidden
+						data-netlify='true'
 					>
 						<StyledInput type='text' placeholder='Name:*' name='name' />
 						<StyledInput
