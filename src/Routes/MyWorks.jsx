@@ -9,7 +9,6 @@ import downloadTwo from '../Assets/Images/downloadTwo.png';
 import downloadThree from '../Assets/Images/downloadThree.png';
 import git from '../Assets/Images/git.png';
 import resume from '../Assets/Images/blog2.png';
-import Switch from '../Helpers/switch';
 const data = [
 	{
 		id: 1,
@@ -262,10 +261,10 @@ const MyWorks = () => {
 					<Title as='p'>These are some of my personal works.</Title>
 				</Header>
 				<Box as='span' span>
-					<StyledButton as='a' href='#project' primary onClick = {Switch('project')}>
+					<StyledButton as='a' href='#project' primary >
 						Projects
 					</StyledButton>
-					<StyledButton as='a' href='#blog' onClick={Switch('blog')}>
+					<StyledButton as='a' href='#blog' >
 						Blogs
 					</StyledButton>
 				</Box>

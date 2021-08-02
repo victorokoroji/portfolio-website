@@ -143,10 +143,11 @@ const Contact = () => {
 						</ReachOut>
 					</ContactAddress>
 					<Form
-						name='form'
-						method='post'
+						name='contact-form'
+						method='POST'
 						data-netlify='true'
-						data-name='Email Form'
+						data-netlify-honeypot="bot-field"
+						enctype="application/x-www-form-urlencoded"
 					>
 						<StyledInput type='text' placeholder='Name:*' name='name' />
 						<StyledInput
