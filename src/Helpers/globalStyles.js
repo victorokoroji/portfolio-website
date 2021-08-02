@@ -19,6 +19,7 @@ body {
     width: 100%;
     scroll-behaviour: smooth;
     overflow-x: hidden;
+    background-color: #fcf8f6
 }
 img{
     width:100%;

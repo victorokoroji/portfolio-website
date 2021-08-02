@@ -9,6 +9,7 @@ import downloadTwo from '../Assets/Images/downloadTwo.png';
 import downloadThree from '../Assets/Images/downloadThree.png';
 import git from '../Assets/Images/git.png';
 import resume from '../Assets/Images/blog2.png';
+import Switch from '../Helpers/switch';
 const data = [
 	{
 		id: 1,
@@ -218,6 +219,7 @@ const Text = styled.p`
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 1em;
+	display: none;
 	&: first-letter {
 		font-size: 1.8em;
 	}
@@ -260,14 +262,14 @@ const MyWorks = () => {
 					<Title as='p'>These are some of my personal works.</Title>
 				</Header>
 				<Box as='span' span>
-					<StyledButton as='a' href='#project' primary>
+					<StyledButton as='a' href='#project' primary onClick = {Switch('project')}>
 						Projects
 					</StyledButton>
-					<StyledButton as='a' href='#blog'>
+					<StyledButton as='a' href='#blog' onClick={Switch('blog')}>
 						Blogs
 					</StyledButton>
 				</Box>
-				<Text id='project'>Projects</Text>
+				<Text id='project' className='page'>Projects</Text>
 				<ProjectContainer>
 					{data.map(d => (
 						<ScrollAnimation
@@ -299,7 +301,7 @@ const MyWorks = () => {
 						bgColor='white'
 					/>
 				</Footer>
-				<Text id='blog'>Blogs</Text>
+				<Text id='blog' className='page'>Blogs</Text>
 				<Blogs>
 					<Blog>
 						<ScrollAnimation
