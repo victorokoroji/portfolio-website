@@ -143,9 +143,10 @@ const Contact = () => {
 						</ReachOut>
 					</ContactAddress>
 					<Form
-						name='contact'
-						method='POST'
+						name='form'
+						method='post'
 						data-netlify='true'
+						data-name='Email Form'
 					>
 						<StyledInput type='text' placeholder='Name:*' name='name' />
 						<StyledInput
